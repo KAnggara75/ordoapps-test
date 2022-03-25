@@ -64,10 +64,14 @@ class ProductCard extends StatelessWidget {
                     height: 15,
                     width: 75,
                     alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFDFAE1D),
-                      borderRadius: BorderRadius.circular(10),
-                      boxShadow: const [
+                    decoration: const BoxDecoration(
+                      color: Color(0xFFDFAE1D),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(10),
+                        topRight: Radius.circular(10),
+                        bottomRight: Radius.circular(10),
+                      ),
+                      boxShadow: [
                         BoxShadow(
                           color: kGrey,
                           offset: Offset(1, 1),
