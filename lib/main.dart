@@ -1,9 +1,10 @@
+import './screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import './constants/colors.dart';
 import './constants/text.dart';
+import './constants/size.dart';
 import './configs/routers.dart';
 import './configs/theme.dart';
-import './screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,11 +15,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, //Disable Debud banner on right top app
+      debugShowCheckedModeBanner: false,
       title: kAppName,
-      theme: theme(), //Theme for this App
-      initialRoute: NavBar.routeName, //Redirect to Splash Screen
-      routes: routes, //Setup Routes from routers.dart
+      theme: theme(),
+      initialRoute: NavBar.routeName,
+      routes: routes,
     );
   }
 }
@@ -35,6 +36,7 @@ class _NavBarState extends State<NavBar> {
   int _selectedIndex = 2;
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Scaffold(
       body: screen[_selectedIndex],
       bottomNavigationBar: navBarWidget(),
