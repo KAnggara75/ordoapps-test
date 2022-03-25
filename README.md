@@ -2,6 +2,15 @@
 
 Ordo UI Slicing Test
 
+## Finish 2/3
+
+1. Home Screen
+2. Produk Datail
+
+## Unfinish 1/3
+
+1. Checkout
+
 ## App Description
 
 | Component     | Description                                                                                             |

@@ -1,10 +1,9 @@
-import './screens/home/home_screen.dart';
-import 'package:flutter/material.dart';
-import './constants/colors.dart';
-import './constants/text.dart';
-import './constants/size.dart';
-import './configs/routers.dart';
 import './configs/theme.dart';
+import './configs/routers.dart';
+import './constants/size.dart';
+import './constants/colors.dart';
+import 'package:flutter/material.dart';
+import './screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: kAppName,
+      title: "Ordo UI Slicing Test",
       theme: theme(),
       initialRoute: NavBar.routeName,
       routes: routes,

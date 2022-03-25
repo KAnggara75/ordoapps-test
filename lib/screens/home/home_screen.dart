@@ -1,10 +1,10 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import '../../widget/w_appbar_action.dart';
-import '../../constants/colors.dart';
 import '../../constants/size.dart';
+import '../../constants/colors.dart';
 import '../../widget/w_product.dart';
+import 'package:flutter/material.dart';
+import '../../widget/w_appbar_action.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -15,7 +15,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _currentHero = 0;
-  int disc = 10;
   final List<String> imgList = [
     "assets/img/hero0.jpg",
     "assets/img/hero1.jpg",

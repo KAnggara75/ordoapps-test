@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-
-import '../constants/colors.dart';
 import '../constants/size.dart';
+import '../constants/colors.dart';
+import 'package:flutter/material.dart';
+import '../screens/product/product_detail.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
@@ -23,10 +23,9 @@ class ProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        ScaffoldMessenger.of(context).removeCurrentSnackBar();
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: Text(image.toString()),
-        ));
+        Navigator.push(context, MaterialPageRoute(builder: (context) {
+          return const ProductDetail();
+        }));
       },
       child: Container(
         decoration: BoxDecoration(
