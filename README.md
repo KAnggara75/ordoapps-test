@@ -5,7 +5,16 @@ Ordo UI Slicing Test [figma link](https://www.figma.com/file/A3KBG8K7vNhg5bcseSu
 ## Finish 2/3
 
 1. Home Screen
+
+    <img src="docs/home1.png" alt="Home Screen" width="200">
+    
+    <img src="docs/home2.png" alt="Home Screen" width="200">
+
 2. Produk Datail
+
+    <img src="docs/detail1.png" alt="Home Screen" width="200">
+
+    <img src="docs/detail2.png" alt="Home Screen" width="200">
 
 ## Unfinish 1/3
 
