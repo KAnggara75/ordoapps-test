@@ -1,6 +1,6 @@
 # Ordo UI Slicing Test
 
-Ordo UI Slicing Test
+Ordo UI Slicing Test [figma link](https://www.figma.com/file/A3KBG8K7vNhg5bcseSu1b6/TEST-ORDO-MOBILE-UI-ENGINEER)
 
 ## Finish 2/3
 
